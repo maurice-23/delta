@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve Delta</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .fieldset{
+            margin-left: 33%;
+            border-radius: 40px 0px 40px 0px;
+            margin-top: 5%;
+            padding: 30px;
+            background: crimson;
+            border: 4px solid #fff;
+            width: 400px;
+
+            box-shadow: 1px 5px 10px black;
+        }
+
+        h1{
+            color: white;
+            font-family: cursive;
+            margin-bottom: 20px;
+        }
+        label{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        input{
+            height: 30px;
+            width: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            outline: none;
+        }
+        input:focus{
+            outline: 2px solid red;
+        }
+        #submitBtn{
+            color: white;
+            height: 35px;
+            font-size: 20px;
+            background: crimson;
+            box-shadow: 0 5px 6px rgba(0, 0, 0, 0.555);
+            border-radius: 10px;
+            border: none;
+            cursor: pointer ;
+            width: 200px;
+
+        }
+
+        #submitBtn:hover{
+            color: black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="fieldset">
+        <h1>Find Delta</h1>
+        <label>Enter A:</label>
+        <input type="text" id="numA"><br><br>
+        <label>Enter B:</label>
+        <input type="text" id="numB"><br><br>
+        <label>Enter C:</label>
+        <input type="text" id="numC"><br><br>
+        <input type="submit" id="submitBtn"><br><br>
+        <label id="equation"></label>
+        <label id="formula">D = b<sup>2</sup>-4ac</label><br><br>
+        <div>
+            <label id="answer"></label><br><br>
+            <label id="answer2"></label><br><br>
+        </div>
+        
+        <label id="root"></label><br><br>
+        <label id="x1"></label><br><br>
+        <label id="x2"></label>
+    </div>
+
+<!-- Javascript -->
+<script src="js.js">
+    
+</script>
+</body>
+</html>
